@@ -18,7 +18,7 @@ saveLocalStorage();
 function callbekc(e) {
   formData[e.target.name] = e.target.value;
   localStorage.setItem('STOREG_KEY', JSON.stringify(formData));
-}
+};
 
 function saveLocalStorage() {
   const parsData = JSON.parse(localStorage.getItem('STOREG_KEY'));
@@ -32,14 +32,13 @@ function saveLocalStorage() {
     }
   }
   console.log(parsData);
-}
+};
 
 function onFormSubmit(e) {
   e.preventDefault();
   if (refs.textarea.value === "" || refs.input.value === "") {
     return alert('Please fill in all the fields!');
   }
-
   e.currentTarget.reset();
   localStorage.removeItem('STOREG_KEY');
-}
+};
