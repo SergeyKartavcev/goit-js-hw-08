@@ -6,10 +6,7 @@ const getStoreg = JSON.parse(localStorage.getItem(STORAGE_KEY));
 const formData = getStoreg  || {};  
 const refs = {
   form: document.querySelector('.feedback-form'),
-// textarea: document.querySelector('.feedback-form textarea'),
-//    input: document.querySelector('.feedback-form input'),
 };
-
 
 
 refs.form.addEventListener('submit', onFormSubmit);
